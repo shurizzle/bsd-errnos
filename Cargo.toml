@@ -1,0 +1,41 @@
+[workspace]
+exclude = ["errno-gen"]
+
+[package]
+name = "bsd-errnos"
+version = "0.1.2"
+authors = ["shurizzle <shura1991@gmail.com>"]
+edition = "2018"
+license = "MIT"
+description = "A list of error numbers for BSDs"
+keywords = ["syscall", "no_std", "bsd", "errors", "errno"]
+readme = "README.md"
+repository = "https://github.com/shurizzle/bsd-errnos"
+homepage = "https://github.com/shurizzle/bsd-errnos"
+documentation = "https://docs.rs/bsd-errnos"
+
+[package.metadata]
+msrv = "1.32.0"
+
+[package.metadata.docs.rs]
+all-features = true
+default-target = "x86_64-apple-darwin"
+targets = [
+  "aarch64-apple-darwin",
+  "arm64_32-apple-watchos",
+  "armv7k-apple-watchos",
+  "aarch64-apple-tvos",
+]
+cargo-args = ["-Z", "build-std"]
+
+[[example]]
+name = "list"
+required-features = ["iter"]
+
+[lib]
+path = "src/lib.rs"
+
+[features]
+default = ["std"]
+std = []
+iter = []
