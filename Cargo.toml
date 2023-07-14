@@ -25,6 +25,10 @@ targets = [
   "arm64_32-apple-watchos",
   "armv7k-apple-watchos",
   "aarch64-apple-tvos",
+  "x86_64-unknown-freebsd",
+  "x86_64-unknown-dragonfly",
+  "x86_64-unknown-openbsd",
+  "x86_64-unknown-netbsd",
 ]
 cargo-args = ["-Z", "build-std"]
 

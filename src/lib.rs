@@ -6,7 +6,7 @@
     target_os = "watchos",
     target_os = "tvos",
     target_os = "freebsd",
-    target_os = "dragonflybsd",
+    target_os = "dragonfly",
     target_os = "openbsd",
     target_os = "netbsd"
 ))]
@@ -22,7 +22,7 @@
     path = "apple.rs"
 )]
 #[cfg_attr(target_os = "freebsd", path = "freebsd.rs")]
-#[cfg_attr(target_os = "dragonflybsd", path = "dragonflybsd.rs")]
+#[cfg_attr(target_os = "dragonfly", path = "dragonfly.rs")]
 #[cfg_attr(target_os = "openbsd", path = "openbsd.rs")]
 #[cfg_attr(target_os = "netbsd", path = "netbsd.rs")]
 mod errno;

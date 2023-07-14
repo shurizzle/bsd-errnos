@@ -26,7 +26,7 @@ const BSDS: [(&str, &str); 5] = [
         "https://raw.githubusercontent.com/freebsd/freebsd-src/main/sys/sys/errno.h",
     ),
     (
-        "dragonflybsd.rs",
+        "dragonfly.rs",
         "https://raw.githubusercontent.com/DragonFlyBSD/DragonFlyBSD/master/sys/sys/errno.h",
     ),
     (
