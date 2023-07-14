@@ -31,6 +31,7 @@ pub use errno::*;
 
 #[link(name = "c")]
 extern "C" {
+    #[cfg_attr(target_os = "dragonfly", link_name = "__errno_location")]
     fn __error() -> *mut i32;
 }
 
