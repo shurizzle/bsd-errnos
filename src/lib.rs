@@ -32,7 +32,10 @@ pub use errno::*;
 #[link(name = "c")]
 extern "C" {
     #[cfg_attr(target_os = "dragonfly", link_name = "__errno_location")]
-    #[cfg_attr(target_os = "netbsd", link_name = "__errno")]
+    #[cfg_attr(
+        any(target_os = "netbsd", target_os = "openbsd"),
+        link_name = "__errno"
+    )]
     fn __error() -> *mut i32;
 }
 
