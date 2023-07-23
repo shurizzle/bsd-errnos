@@ -4,7 +4,7 @@
 [![docs.rs](https://img.shields.io/docsrs/bsd-errnos?style=for-the-badge)](https://docs.rs/bsd-errnos)
 ![Crates.io](https://img.shields.io/crates/l/bsd-errnos?style=for-the-badge)
 
-Cross-arch enumeration of Linux error numbers that may vary across archs.
+Cross-arch enumeration of BSDs error numbers that may vary across archs.
 
 ### Feature flags
 
